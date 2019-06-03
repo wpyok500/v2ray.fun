@@ -37,7 +37,7 @@ if [[ ${choice} == 1 ]]; then
 	echo "7.卸载V2ray"
     while :; do echo
 	    read -p "请选择： " schoice
-	    if [[ ! $schoice =~ ^[1-5]$ ]]; then
+	    if [[ ! $schoice =~ ^[1-7]$ ]]; then
             if [[ -z ${schoice} ]];then
                 bash /usr/local/bin/v2ray
                 exit 0
