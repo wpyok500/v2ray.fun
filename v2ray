@@ -76,12 +76,12 @@ if [[ ${choice} == 1 ]]; then
         tail -f /var/log/v2ray/access.log
         bash /usr/local/bin/v2ray
     fi
-	if [[ ${choice} == 6 ]]; then
+	if [[ ${schoice} == 6 ]]; then
 		wget -N --no-check-certificate https://raw.githubusercontent.com/wpyok500/v2ray.fun/master/upgrade.sh && bash upgrade.sh && rm -rf upgrade.sh
 		bash /usr/local/bin/v2ray
 	fi
 
-	if [[ ${choice} == 7 ]]; then
+	if [[ ${schoice} == 7 ]]; then
 		wget -N --no-check-certificate https://raw.githubusercontent.com/wpyok500/v2ray.fun/master/uninstall.sh && bash uninstall.sh
 	fi
 fi
